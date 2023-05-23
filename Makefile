@@ -17,6 +17,9 @@ windows:
 format:
 	gofmt -s -w ./
 
+test:
+	go test -v
+
 get:
 	go get
 
