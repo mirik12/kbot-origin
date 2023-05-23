@@ -17,3 +17,6 @@ secret:
   name: kbot
   tokenKey: token
   tokenName: TELE_TOKEN
+
+securityContext:
+  privileged: true
