@@ -17,6 +17,9 @@ windows:
 format:
 	gofmt -s -w ./
 
+lint:
+	golint
+
 test:
 	go test -v
 
