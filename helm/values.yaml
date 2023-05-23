@@ -3,16 +3,22 @@
 # Declare variables to be passed into your templates.
 
 image:
-  repository: mirik12
-  tag: "v1.0.5-4dc2a62"
-  arch: arm64
+  registry: "ghcr.io"
+  repository: "mirik12/kbot"
+  tag: "v5.0.0-e1e880e"
+  os: linux
+  arch: amd64
   TELE_TOKEN: TELE_TOKEN
+
 replicaCount: 1
+
 service:
   port: 80
+
 secret:
   name: kbot
   tokenKey: token
   tokenName: TELE_TOKEN
+
 securityContext:
   privileged: true
